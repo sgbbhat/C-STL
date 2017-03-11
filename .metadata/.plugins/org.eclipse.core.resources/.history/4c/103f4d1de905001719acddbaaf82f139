@@ -1,0 +1,22 @@
+//============================================================================
+// Name        : STL-string.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+#include <list>
+
+using namespace std;
+
+int main() {
+	list<int> test;
+	test.insert(1,10);
+
+	string Test1 = "Hello";
+	string Test2 = "World";
+	return 0;
+}

@@ -1,0 +1,24 @@
+!SESSION 2017-03-10 16:39:24.937 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/shreeganesh/Documents/C++/C-STL -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-10 16:47:05.017
+!MESSAGE Indexed 'STL-string' (1 sources, 0 headers) in 0.23 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-11 01:33:09.845
+!MESSAGE Indexed 'STL-Vector' (1 sources, 148 headers) in 3.78 sec: 12,650 declarations; 20,687 references; 0 unresolved inclusions; 22 syntax errors; 27 unresolved names (0.08%)
+!SESSION 2017-03-11 12:00:52.988 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-11 14:00:05.887
+!MESSAGE Indexed 'STL-map' (1 sources, 148 headers) in 6.05 sec: 12,650 declarations; 20,687 references; 0 unresolved inclusions; 22 syntax errors; 27 unresolved names (0.08%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-11 16:44:38.677
+!MESSAGE Indexed 'STL-passVector' (1 sources, 0 headers) in 0.00 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)

@@ -1,0 +1,25 @@
+//============================================================================
+// Name        : STL-string.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+
+int main() {
+	vector<int> array1;
+	vector<int>::iterator it1;
+
+	array1.insert(it1, 1);
+
+	cout<<array1<<endl;
+
+	return 0;
+}

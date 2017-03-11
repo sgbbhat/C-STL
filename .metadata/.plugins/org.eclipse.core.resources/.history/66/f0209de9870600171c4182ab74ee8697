@@ -1,0 +1,52 @@
+//============================================================================
+// Name        : STL-Vector.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+	vector<int> intVec(20);
+
+	for(int i=0; i<20; i++)
+	{
+		intVec[i] = i;
+	}
+
+	for(int i=0; i<intVec.size(); i++)
+	{
+		cout<<intVec.at(i) <<endl;
+	}
+
+	for(int i=0; i<5; i++)
+	{
+		intVec.push_back(i);
+	}
+
+	cout<<"---------------------------"<<endl;
+
+	for(int i=0; i<intVec.size(); i++)
+	{
+		cout<<intVec.at(i) <<endl;
+	}
+
+	cout<<"Size : "<<intVec.size()<<endl;
+
+	cout<<"Iterator"<<endl;
+
+	vector<int>::iterator it;
+
+	for(it= intVec.begin(); it != intVec.end(); it++)
+	{
+		cout<<*it<<endl;
+	}
+
+	cout<<"Reverse Iterator"<<endl;
+
+	return 0;
+}

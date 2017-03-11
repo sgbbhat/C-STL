@@ -1,0 +1,28 @@
+//============================================================================
+// Name        : STL-string.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+int main() {
+
+	string s1 = "Hello World";
+	for(unsigned i=0; i<s1.size(); i++)
+	{
+		if(s1.at(4)=='o')
+		{
+			cout<<"BJP wins"<<endl;
+		}
+		cout<<s1[i]<<endl;
+	}
+
+	return 0;
+}

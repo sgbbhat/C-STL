@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : STL-string.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+#include <map>
+
+using namespace std;
+
+
+int main() {
+	// Use of method - append
+	string s1 = "Hello";
+	string s2 = " World";
+	cout<<s1.append(s2,2,6);
+
+	map<int, int> m1;
+	m1.insert(1, 2);
+	m1.insert(2, 2);
+	m1.insert(3, 2);
+	cout<<m1.find(2);
+
+	return 0;
+}
