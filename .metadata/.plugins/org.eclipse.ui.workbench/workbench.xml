@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
 <window height="773" maximized="true" width="1022" x="35" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -35,9 +35,9 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="STL-Vector.cpp" partName="STL-Vector.cpp" path="/home/shreeganesh/Documents/C++/C-STL/STL-Vector/src/STL-Vector.cpp" title="STL-Vector.cpp" tooltip="STL-Vector/src/STL-Vector.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/STL-Vector/src/STL-Vector.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="485" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="STL-stringmap.cpp" partName="STL-stringmap.cpp" path="/home/shreeganesh/Documents/C++/C-STL/STL-stringmap/src/STL-stringmap.cpp" title="STL-stringmap.cpp" tooltip="STL-stringmap/src/STL-stringmap.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/STL-stringmap/src/STL-stringmap.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="477" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -46,7 +46,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Errors (3 items)"/>
+<category IMemento.internal.id="Errors (2 items)"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="284" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
@@ -117,43 +117,30 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@4303b7f0" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4303b7f0" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25940594" ratioLeft="262" ratioRight="748" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.65865386" ratioLeft="411" ratioRight="213" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<info folder="true" part="bottomRight" ratio="0.65865386" ratioLeft="411" ratioRight="213" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="312" ratioRight="312" relationship="4" relative="topLeft">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="312" ratioRight="312" relationship="4" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -207,9 +194,9 @@
 <new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
@@ -239,7 +226,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2494331" ratioLeft="330" ratioRight="993" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.7488515" ratioLeft="489" ratioRight="164" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.7091503" ratioLeft="434" ratioRight="178" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -253,7 +240,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.7492447" ratioLeft="744" ratioRight="249" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="topRight" ratio="0.7446808" ratioLeft="735" ratioRight="252" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
@@ -273,37 +260,11 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STL-string/src/STL-string.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/STL-string/Debug/src/subdir.mk"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STL-Vector/src/STL-Vector.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STL-string/src/STL-string.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STL-List/src/STL-List.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STL-map/src/STL-map.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STL-stringmap/src/STL-stringmap.cpp"/>
 </editors>
-<item historyLabel="STL-string.cpp" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="STL-string.cpp" index="0">
-<position info="not_deleted" x="668" y="0"/>
-</item>
-<item historyLabel="STL-string.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="STL-string.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="STL-string.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="STL-string.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="STL-string.cpp" index="0">
-<position info="not_deleted" x="523" y="0"/>
-</item>
-<item historyLabel="STL-string.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="STL-string.cpp" index="0">
-<position info="not_deleted" x="401" y="0"/>
-</item>
-<item historyLabel="STL-string.cpp" index="0">
-<position/>
-</item>
 <item historyLabel="STL-string.cpp" index="0">
 <position info="not_deleted" x="682" y="0"/>
 </item>
@@ -352,8 +313,107 @@
 <item historyLabel="STL-Vector.cpp" index="2">
 <position info="not_deleted" x="435" y="0"/>
 </item>
-<item active="true" historyLabel="STL-Vector.cpp" index="2">
-<position info="not_deleted" x="456" y="0"/>
+<item historyLabel="STL-Vector.cpp" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="STL-string.cpp" index="3">
+<position info="not_deleted" x="509" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="394" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="426" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="345" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="455" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="481" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="1409" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="1409" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="697" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="658" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="621" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="481" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="1424" y="0"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="321" y="8"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="341" y="4"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="363" y="3"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="373" y="4"/>
+</item>
+<item historyLabel="STL-List.cpp" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="STL-map.cpp" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="STL-map.cpp" index="5">
+<position info="not_deleted" x="1018" y="0"/>
+</item>
+<item historyLabel="STL-map.cpp" index="5">
+<position info="not_deleted" x="1314" y="0"/>
+</item>
+<item historyLabel="STL-map.cpp" index="5">
+<position info="not_deleted" x="1104" y="0"/>
+</item>
+<item historyLabel="STL-map.cpp" index="5">
+<position info="not_deleted" x="1140" y="0"/>
+</item>
+<item historyLabel="STL-map.cpp" index="5">
+<position info="not_deleted" x="1159" y="0"/>
+</item>
+<item historyLabel="STL-map.cpp" index="5">
+<position info="not_deleted" x="1311" y="0"/>
+</item>
+<item historyLabel="STL-map.cpp" index="5">
+<position info="not_deleted" x="1243" y="0"/>
+</item>
+<item historyLabel="STL-map.cpp" index="5">
+<position info="not_deleted" x="1311" y="0"/>
+</item>
+<item historyLabel="STL-stringmap.cpp" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="STL-stringmap.cpp" index="6">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="STL-stringmap.cpp" index="6">
+<position info="not_deleted" x="1116" y="0"/>
+</item>
+<item active="true" historyLabel="STL-stringmap.cpp" index="6">
+<position info="not_deleted" x="1093" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -372,14 +432,17 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STL-stringmap.cpp" tooltip="STL-stringmap/src/STL-stringmap.cpp">
+<persistable path="/STL-stringmap/src/STL-stringmap.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STL-List.cpp" tooltip="STL-List/src/STL-List.cpp">
+<persistable path="/STL-List/src/STL-List.cpp"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STL-Vector.cpp" tooltip="STL-Vector/src/STL-Vector.cpp">
 <persistable path="/STL-Vector/src/STL-Vector.cpp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="subdir.mk" tooltip="STL-string/Debug/src/subdir.mk">
 <persistable path="/STL-string/Debug/src/subdir.mk"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STL-string.cpp" tooltip="STL-string/src/STL-string.cpp">
-<persistable path="/STL-string/src/STL-string.cpp"/>
 </file>
 </mruList>
 </workbench>

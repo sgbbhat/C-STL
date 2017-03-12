@@ -1,0 +1,36 @@
+//============================================================================
+// Name        : STL-List.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main() {
+	int array1[] {10, 40, 30, 20};
+	int array2[] {99, 25, 2, 99};
+
+	list<int> list1(array1);
+	list<int> list2(array2);
+
+	list<int>::iterator it_list1;
+	list<int>::iterator it_list2;
+
+	for(it_list1 = list1.begin(); it_list1 != list1.end(); it_list1++ )
+	{
+		cout<<*it_list1<<endl;
+	}
+
+	lis1.sort();
+	list2.sort();
+
+	lis1.merge(list2);
+
+
+
+ 	return 0;
+}

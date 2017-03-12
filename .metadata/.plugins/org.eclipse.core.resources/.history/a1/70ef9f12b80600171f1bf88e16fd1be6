@@ -1,0 +1,19 @@
+//============================================================================
+// Name        : STL-List.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main() {
+	int array1[] {10, 40, 30, 20};
+	int array2[] {99, 25, 2, 99};
+
+	list<int> lis1(array1);
+	return 0;
+}

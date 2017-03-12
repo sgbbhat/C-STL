@@ -1,0 +1,6 @@
+21:45:43 **** Incremental Build of configuration Debug for project STL-List ****
+make all 
+make: Nothing to be done for 'all'.
+
+21:45:43 Build Finished (took 75ms)
+

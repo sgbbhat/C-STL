@@ -22,3 +22,39 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-03-11 16:44:38.677
 !MESSAGE Indexed 'STL-passVector' (1 sources, 0 headers) in 0.00 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+!SESSION 2017-03-11 17:18:52.960 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-03-11 17:18:59.505
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-11 18:04:26.746
+!MESSAGE Indexed 'STL-List' (1 sources, 0 headers) in 0.01 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-03-11 18:25:46.238
+!MESSAGE An internal error occurred during: "Launching STL-List Debug".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.resetBuildConfiguration(AbstractCLaunchDelegate.java:763)
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.finalLaunchCheck(AbstractCLaunchDelegate.java:753)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:836)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2017-03-11 23:05:23.089 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-03-11 23:06:08.534
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-11 23:48:16.975
+!MESSAGE Indexed 'STL-stringmap' (1 sources, 148 headers) in 7.18 sec: 12,650 declarations; 20,687 references; 0 unresolved inclusions; 22 syntax errors; 27 unresolved names (0.08%)

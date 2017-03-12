@@ -1,6 +1,15 @@
-01:40:58 **** Incremental Build of configuration Debug for project STL-string ****
+18:03:58 **** Incremental Build of configuration Debug for project STL-string ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/STL-string.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/STL-string.d" -MT"src/STL-string.d" -o "src/STL-string.o" "../src/STL-string.cpp"
+Finished building: ../src/STL-string.cpp
+ 
+Building target: STL-string
+Invoking: Cross G++ Linker
+g++  -o "STL-string"  ./src/STL-string.o   
+Finished building target: STL-string
+ 
 
-01:40:58 Build Finished (took 75ms)
+18:04:01 Build Finished (took 3s.84ms)
 
