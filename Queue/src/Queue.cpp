@@ -24,8 +24,8 @@ private:
 
 public:
 	Queue();
-	void push(int key);
-	void pop();
+	void Enqueue(int key);
+	void Dequeue();
 	void PrintQueue();
 };
 
@@ -36,7 +36,7 @@ Queue::Queue()
 	curr = NULL;
 }
 
-void Queue::push(int key)
+void Queue::Enqueue(int key)
 {
 	node * n = new node();
 	n->Key = key;
@@ -63,7 +63,7 @@ void Queue::push(int key)
 	cout<<"Key "<<key<<" added to the queue"<<endl;
 }
 
-void Queue::pop()
+void Queue::Dequeue()
 {
 	node * delPtr = new node();
 	int key;
@@ -95,36 +95,36 @@ void Queue::PrintQueue()
 int main() {
 	Queue Sch1;
 
-	cout<<"Testing push"<<endl;
-	Sch1.push(25);
-	Sch1.push(35);
-	Sch1.push(45);
-	Sch1.push(55);
+	cout<<"Testing Enqueue"<<endl;
+	Sch1.Enqueue(25);
+	Sch1.Enqueue(35);
+	Sch1.Enqueue(45);
+	Sch1.Enqueue(55);
 
 	cout<<"Testing Print"<<endl;
 	Sch1.PrintQueue();
 
-	cout<<"Testing pop"<<endl;
-	Sch1.pop();
+	cout<<"Testing Dequeue"<<endl;
+	Sch1.Dequeue();
 
 	cout<<"Testing Print"<<endl;
 	Sch1.PrintQueue();
 
-	cout<<"Testing pop"<<endl;
-	Sch1.pop();
+	cout<<"Testing Dequeue"<<endl;
+	Sch1.Dequeue();
 
 	cout<<"Testing Print"<<endl;
 	Sch1.PrintQueue();
 
-	cout<<"Testing push"<<endl;
-	Sch1.push(25);
-	Sch1.push(35);
+	cout<<"Testing Enqueue"<<endl;
+	Sch1.Enqueue(25);
+	Sch1.Enqueue(35);
 
 	cout<<"Testing Print"<<endl;
 	Sch1.PrintQueue();
 
-	cout<<"Testing pop"<<endl;
-	Sch1.pop();
+	cout<<"Testing Dequeue"<<endl;
+	Sch1.Dequeue();
 
 	cout<<"Testing Print"<<endl;
 	Sch1.PrintQueue();

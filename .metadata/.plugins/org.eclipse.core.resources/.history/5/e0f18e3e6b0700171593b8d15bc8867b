@@ -1,0 +1,75 @@
+//============================================================================
+// Name        : Stack.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int Key;
+	node * next;
+};
+
+class Stack
+{
+private:
+	node * front;
+	node * rear;
+	node * curr;
+
+public:
+	Stack();
+	void push(int key);
+	void pop();
+	void PrintStack();
+};
+
+Stack::Stack()
+{
+	front = NULL;
+	rear = NULL;
+	curr = NULL;
+}
+
+void Stack::push(int key)
+{
+	node * n = new node();
+	n->Key = key;
+
+	if(front == NULL)
+	{
+		front = n;
+		rear = n;
+		n->next = NULL;
+	}
+	else
+	{
+		n->next = front;
+		front = n;
+	}
+}
+
+void Stack::pop()
+{
+	node * delPtr = new node();
+
+	if(front == NULL)
+	{
+		cout<<"Stack is Empty"<<endl;
+	}
+	else
+	{
+		delPtr = front;
+		front = front->next
+	}
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}
