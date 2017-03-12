@@ -1,0 +1,99 @@
+//============================================================================
+// Name        : Queue.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int Key;
+	node * next;
+};
+
+class Queue
+{
+private:
+	node * front;
+	node * rear;
+	node * curr;
+
+public:
+	Queue();
+	void push(int key);
+	void pop();
+	void PrintQueue();
+};
+
+Queue::Queue()
+{
+	front = NULL;
+	rear = NULL;
+	curr = NULL;
+}
+
+void Queue::push(int key)
+{
+	node * n = new node();
+	n->Key = key;
+	n->next = NULL;
+
+	if(front == NULL)
+	{
+		front = n ;
+		rear = n ;
+	}
+	else
+	{
+		curr = front;
+
+		while(curr->next != NULL)
+		{
+			curr = curr->next;
+		}
+
+		curr->next = n;
+		rear = n;
+	}
+}
+
+void Queue::pop()
+{
+	node * delPtr = new node();
+
+	if(curr == NULL)
+	{
+		cout<<"Queue is empty"<<endl;
+	}
+	else
+	{
+		delPtr = front;
+		delPtr->next = NULL;
+		front = front->next;
+	}
+	delete delPtr;
+}
+
+void Queue::PrintQueue()
+{
+	curr = front;
+
+	while(curr != NULL)
+	{
+		cout<<curr->Key<<endl;
+		curr = curr->next;
+	}
+}
+
+int main() {
+	Queue Sch1;
+	Sch1.push(25);
+	Sch1.push(35);
+	Sch1.push(45);
+	Sch1.push(55);
+	return 0;
+}

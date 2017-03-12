@@ -1,0 +1,39 @@
+//============================================================================
+// Name        : LinkedList.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int Key;
+	node * next;
+};
+
+class LinkedList
+{
+private:
+	node * headPtr;
+	node * currPtr;
+	node * tempPtr;
+
+public:
+	void AddNode(int Key);
+	void DeleteNode(int Key);
+	void PrintList();
+};
+
+void LinkedList::AddNode(int Key)
+{
+	nodePtr n = new
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

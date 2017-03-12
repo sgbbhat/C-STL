@@ -58,3 +58,15 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-03-11 23:48:16.975
 !MESSAGE Indexed 'STL-stringmap' (1 sources, 148 headers) in 7.18 sec: 12,650 declarations; 20,687 references; 0 unresolved inclusions; 22 syntax errors; 27 unresolved names (0.08%)
+!SESSION 2017-03-12 12:25:52.176 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-12 12:31:19.388
+!MESSAGE Indexed 'LinkedList' (1 sources, 0 headers) in 0.05 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-12 14:32:05.230
+!MESSAGE Indexed 'Queue' (1 sources, 0 headers) in 0.03 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)

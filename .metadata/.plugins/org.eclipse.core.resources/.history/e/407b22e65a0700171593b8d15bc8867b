@@ -1,0 +1,34 @@
+//============================================================================
+// Name        : Queue.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int Key;
+	node * next;
+};
+
+class Queue
+{
+private:
+	node * front;
+	node * back;
+
+public:
+	Queue();
+	void push(int key);
+	void pop();
+	void PrintQueue();
+};
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}
