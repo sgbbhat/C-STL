@@ -1,0 +1,17 @@
+09:43:58 **** Incremental Build of configuration Debug for project BinarySearchTree ****
+make all 
+Building file: ../src/BinarySearchTree.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BinarySearchTree.d" -MT"src/BinarySearchTree.d" -o "src/BinarySearchTree.o" "../src/BinarySearchTree.cpp"
+../src/BinarySearchTree.cpp: In member function ‘void BST::RemoveNodePrivate(int, node*)’:
+../src/BinarySearchTree.cpp:115:40: error: ‘RemoveMatch’ was not declared in this scope
+       RemoveMatch(ptr, ptr->left , true) :
+                                        ^
+../src/BinarySearchTree.cpp:121:41: error: ‘RemoveMatch’ was not declared in this scope
+       RemoveMatch(ptr, ptr->right , true) :
+                                         ^
+src/subdir.mk:18: recipe for target 'src/BinarySearchTree.o' failed
+make: *** [src/BinarySearchTree.o] Error 1
+
+09:43:58 Build Finished (took 564ms)
+

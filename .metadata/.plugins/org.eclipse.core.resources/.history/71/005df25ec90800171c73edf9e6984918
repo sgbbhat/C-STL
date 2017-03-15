@@ -1,0 +1,128 @@
+//============================================================================
+// Name        : List.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int Key;
+	node * next;
+};
+
+class List
+{
+private:
+	node * headPtr;
+	node * currPtr;
+	node * tempPtr;
+
+public:
+	List();
+	void AddNode(int Key);
+	void DeleteNode(int Key);
+	void PrintList();
+};
+
+List::List()
+{
+	headPtr = NULL;
+	currPtr = NULL;
+	tempPtr = NULL;
+}
+
+void List::AddNode(int Key)
+{
+	node * n = new node();
+	n->Key = Key;
+	n->next = NULL;
+
+	if(headPtr == NULL)
+	{
+		headPtr = n;
+	}
+	else
+	{
+		currPtr = headPtr;
+
+		while(currPtr->next != NULL)
+		{
+			currPtr = currPtr->next;
+		}
+
+		currPtr->next = n;
+	}
+}
+
+void List::DeleteNode(int Key)
+{
+	node * delPtr = new node();
+
+	if(headPtr == NULL)
+	{
+		cout<<"List is empty"<<endl;
+	}
+	else
+	{
+		currPtr = headPtr;
+
+		while(currPtr != NULL && currPtr->Key != Key)
+		{
+			tempPtr = currPtr;
+			currPtr = currPtr->next;
+		}
+
+		if(currPtr == NULL)
+		{
+			cout<<"Key "<<Key<<" is not in the list"<<endl;
+		}
+		else
+		{
+			delPtr = currPtr;
+
+			if(currPtr == headPtr)
+			{
+				headPtr = headPtr->next;
+			}
+			else
+			{
+				currPtr = currPtr->next;
+				tempPtr->next = currPtr;
+			}
+		}
+	}
+	delete delPtr;
+}
+
+void List::PrintList()
+{
+	currPtr = headPtr;
+
+	cout<<"Items in the list : "<<endl;
+	while(currPtr != NULL)
+	{
+		cout<<currPtr->Key<<endl;
+	}
+}
+
+int main() {
+	List L1;
+	L1.DeleteNode(20);
+
+	L1.AddNode(20);
+	L1.AddNode(30);
+
+	L1.DeleteNode(25);
+
+	L1.AddNode(40);
+	L1.AddNode(50);
+
+	L1.PrintList();
+
+	return 0;
+}

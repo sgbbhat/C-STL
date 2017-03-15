@@ -1,0 +1,26 @@
+//============================================================================
+// Name        : IsUnique.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream
+#include <map>
+using namespace std;
+
+int main() {
+	map<char,int> CharSet(26);
+	map<char,int>::iterator it;
+	map['a'] = 0;
+	map['b'] = 0;
+	map['c'] = 0;
+	map['d'] = 0;
+	map['e'] = 0;
+	map['f'] = 0;
+	map['g'] = 0;
+	map['h'] = 0;
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

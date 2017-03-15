@@ -1,0 +1,279 @@
+//============================================================================
+// Name        : BinarySearchTree.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int key;
+	node * left;
+	node * right;
+};
+
+class BST
+{
+private:
+	node * root;
+	void AddLeafPrivate(int key, node * ptr);
+	void PrintInOrderPrivate(node * ptr);
+	node * ReturnNodePrivate(int key, node * ptr);
+	int FindSmallestPrivate(node * ptr);
+	void RemoveNodePrivate(int key, node * ptr);
+
+public:
+	BST();
+	node * CreateLeaf(int key);
+	void AddLeaf(int key);
+	void PrintInOrder();
+	node * ReturnNode(int key);
+	int ReturnRootKey();
+	void PrintChildren(int key);
+	int FindSmallest();
+	void RemoveNode(int key);
+	void RemoveRootMatch();
+};
+
+void BST::RemoveRootMatch()
+{
+	if(root != NULL)
+	{
+		node * delPtr = root;
+		int rootKeys = root->key;
+		int SmallestInRightSubTree;
+
+		// case 0 - 0 children
+		if(root->left == NULL && root->right == NULL)
+		{
+			root = NULL;
+			delete delPtr;
+		}
+	}
+	else
+	{
+		cout<<"Can not remove root"<<endl;
+	}
+
+}
+
+void BST::RemoveNode(int key)
+{
+	RemoveNodePrivate(key, root);
+}
+
+void BST::RemoveNodePrivate(int key, node * ptr)
+{
+	if(root == NULL)
+	{
+		cout<<"Tree is empty"<<endl;
+	}
+	else
+	{
+		if(root->key == key)
+		{
+			RemoveRootMatch();
+		}
+		else
+		{
+			if(key < ptr->key && ptr->left != NULL)
+			{
+				ptr->left->key == key ?
+						RemoveMatch(ptr, ptr->left , true) :
+						RemoveNodePrivate(key, ptr->left);
+			}
+			else if(key < ptr->key && ptr->right != NULL)
+			{
+				ptr->right->key == key ?
+						RemoveMatch(ptr, ptr->right , true) :
+						RemoveNodePrivate(key, ptr->right);
+			}
+			else
+			{
+				cout<<"Key was not found in the tree"<<endl;
+			}
+		}
+	}
+}
+
+int BST::FindSmallest()
+{
+	return FindSmallestPrivate(root);
+}
+
+int BST::FindSmallestPrivate(node * ptr)
+{
+	if(root == NULL)
+	{
+		cout<<"Tree is empty"<<endl;
+		return -1000;
+	}
+	else
+	{
+		if(ptr->left != NULL)
+		{
+			return FindSmallestPrivate(ptr->left);
+		}
+		else
+		{
+			return ptr->key;
+		}
+	}
+}
+
+void BST::PrintChildren(int key)
+{
+	node * ptr = ReturnNode(key);
+	if(ptr != NULL)
+	{
+		cout<<"Parent Node :"<<ptr->key<<endl;
+		ptr->left != NULL ?
+				cout<<"Left child : "<< ptr->left->key<<endl :
+				cout<<"Left child is empty"<<endl;
+		ptr->right != NULL ?
+				cout<<"Right child : "<< ptr->right->key<<endl :
+				cout<<"right child is empty"<<endl;
+	}
+	else
+	{
+		cout<<"Key "<<key<<"is not in the tree"<<endl;
+	}
+
+}
+
+int BST::ReturnRootKey()
+{
+	if(root == NULL)
+	{
+		cout<<"Tree is empty"<<endl;
+		return -1000;
+	}
+	else
+	{
+		return root->key;
+	}
+}
+
+node * BST::ReturnNode(int key)
+{
+	return ReturnNodePrivate(key, root);
+}
+
+node * BST::ReturnNodePrivate(int key, node * ptr)
+{
+	if(ptr != NULL)
+	{
+		if(ptr->key == key)
+		{
+			return ptr;
+		}
+		else
+		{
+			if(key < ptr->key)
+				return ReturnNodePrivate(key, ptr->left);
+			else
+				return ReturnNodePrivate(key, ptr->right);
+		}
+	}
+	else
+	{
+		return NULL;
+	}
+}
+
+BST::BST()
+{
+	root = NULL;
+}
+
+
+void BST::PrintInOrder()
+{
+	PrintInOrderPrivate(root);
+}
+
+void BST::PrintInOrderPrivate(node * ptr)
+{
+	if(root == NULL)
+	{
+		cout<<"Tree is empty"<<endl;
+	}
+	else
+	{
+		if(ptr->left != NULL)
+		{
+			PrintInOrderPrivate(ptr->left);
+		}
+		cout<<ptr->key<<" "<<endl;
+
+		if(ptr->right != NULL)
+		{
+			PrintInOrderPrivate(ptr->right);
+		}
+	}
+}
+
+node * BST::CreateLeaf(int key)
+{
+	node * n = new node();
+	n->key = key;
+	n->left = NULL;
+	n->right = NULL;
+
+	return n;
+}
+
+void BST::AddLeaf(int key)
+{
+	AddLeafPrivate(key, root);
+}
+
+void BST::AddLeafPrivate(int key, node * ptr)
+{
+	if(root == NULL)
+	{
+		root = CreateLeaf(key);
+	}
+	else if(key < ptr->key)
+	{
+		if(ptr->left != NULL)
+			AddLeafPrivate(key, ptr->left);
+		else
+			ptr->left = CreateLeaf(key);
+	}
+	else if(key > ptr->key)
+	{
+		if(ptr->right != NULL)
+			AddLeafPrivate(key, ptr->right);
+		else
+			ptr->right = CreateLeaf(key);
+	}
+	else
+		cout<<"Key "<<key<<" has already been added to the tree"<<endl;
+}
+
+int main() {
+	int TreeKeys[16] = {50, 76, 21, 4, 32, 64, 15, 52, 14, 100, 83, 2, 3, 70, 87, 80};
+	BST Set1;
+
+	for(int i=0; i<16; i++)
+	{
+		Set1.AddLeaf(TreeKeys[i]);
+	}
+	Set1.PrintInOrder();
+
+	Set1.PrintChildren(Set1.ReturnRootKey());
+
+	for(int i=0; i<16; i++)
+	{
+		Set1.PrintChildren(TreeKeys[i]);
+	}
+
+	cout<<"Smallest element in the list : "<<Set1.FindSmallest()<<endl;
+
+	return 0;
+}

@@ -1,0 +1,41 @@
+//============================================================================
+// Name        : IsUnique.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <map>
+using namespace std;
+
+bool IsUnique(string S)
+{
+	map<char,int> CharSet;
+	map<char,int>::iterator it;
+	CharSet['a'] = 0;
+	CharSet['b'] = 0;
+	CharSet['c'] = 0;
+	CharSet['d'] = 0;
+	CharSet['e'] = 0;
+	CharSet['f'] = 0;
+	CharSet['g'] = 0;
+	CharSet['h'] = 0;
+
+	for(int i=0; i<S.length(); i++)
+	{
+		it = CharSet.find(S[i]);
+
+		if(CharSet.at(it) < 1)
+		{
+			CharSet[it] = CharSet[it] + 1;
+		}
+	}
+}
+
+int main() {
+
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

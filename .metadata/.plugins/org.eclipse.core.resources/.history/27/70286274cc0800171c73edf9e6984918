@@ -1,0 +1,30 @@
+//============================================================================
+// Name        : DoubleLinkedList.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int Key;
+	node * next;
+	node * prev;
+};
+
+class DLinkList
+{
+	node * headPtr;
+	node * tailPtr;
+	node * currPtr;
+	node * tempPtr;
+};
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

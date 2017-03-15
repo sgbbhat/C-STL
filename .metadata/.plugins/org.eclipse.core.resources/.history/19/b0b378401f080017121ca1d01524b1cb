@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : StringPermute.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+#include <map>
+using namespace std;
+
+bool IsStringPermute(string S1, string S2)
+{
+	map<char,int> StrChar;
+
+	if(S1.length() != S2.length())
+	{
+		return false;
+	}
+
+	for(int i=0; i< lenghth)
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

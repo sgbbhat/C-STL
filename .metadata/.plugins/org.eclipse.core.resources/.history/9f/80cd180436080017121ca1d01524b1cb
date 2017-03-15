@@ -1,0 +1,17 @@
+//============================================================================
+// Name        : Hash.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "hash.h"
+using namespace std;
+
+int main() {
+	HashTable phonebook;
+	cout<<phonebook.HashFunction("ShreeganeshX")<<endl;
+	return 0;
+}

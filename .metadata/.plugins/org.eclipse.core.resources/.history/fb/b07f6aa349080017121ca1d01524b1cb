@@ -1,0 +1,31 @@
+//============================================================================
+// Name        : Hash.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "hash.h"
+using namespace std;
+
+int main() {
+	HashTable phonebook;
+	phonebook.AddItems("Andy", 3239643);
+	phonebook.AddItems("Mark", 3239643);
+	phonebook.AddItems("Mike", 3239643);
+	phonebook.AddItems("Shaun", 3239643);
+	phonebook.AddItems("Debra", 3239643);
+	phonebook.AddItems("Steve", 3239643);
+	phonebook.AddItems("John", 3239643);
+	phonebook.AddItems("Micheal", 3239643);
+	phonebook.AddItems("Daniel", 3239643);
+	phonebook.AddItems("Michelle", 3239643);
+
+	phonebook.PrintTable();
+
+	cout<<phonebook.FindContact("Andy");
+
+	return 0;
+}

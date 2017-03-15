@@ -1,0 +1,45 @@
+/*
+ * hash.h
+ *
+ *  Created on: Mar 13, 2017
+ *      Author: shreeganesh
+ */
+
+#ifndef HASH_H_
+#define HASH_H_
+
+#include<iostream>
+#include<string>
+#include<cstdlib>
+
+using namespace std;
+
+struct item
+{
+	string name;
+	int contect;
+	item * next;
+};
+
+class HashTable
+{
+private:
+	static const int TableSize = 10;
+public:
+	HashTable();
+	int HashFunction(string key);
+};
+
+int HashTable::HashFunction(string name)
+{
+	int hashNumber = 0;
+
+	for(unsigned i=0; i< name.length(); i++)
+	{
+		hashNumber += (int) name[i];
+	}
+
+	return hashNumber % TableSize;
+}
+
+#endif /* HASH_H_ */

@@ -1,0 +1,15 @@
+12:41:35 **** Incremental Build of configuration Debug for project OpOveload2 ****
+make all 
+Building file: ../src/OpOveload2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/OpOveload2.d" -MT"src/OpOveload2.d" -o "src/OpOveload2.o" "../src/OpOveload2.cpp"
+Finished building: ../src/OpOveload2.cpp
+ 
+Building target: OpOveload2
+Invoking: Cross G++ Linker
+g++  -o "OpOveload2"  ./src/OpOveload2.o   
+Finished building target: OpOveload2
+ 
+
+12:41:35 Build Finished (took 426ms)
+

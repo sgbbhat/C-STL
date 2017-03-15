@@ -1,0 +1,134 @@
+/*
+ * hash.h
+ *
+ *  Created on: Mar 13, 2017
+ *      Author: shreeganesh
+ */
+
+#ifndef HASH_H_
+#define HASH_H_
+
+#include<iostream>
+#include<string>
+#include<cstdlib>
+
+using namespace std;
+
+struct item
+{
+	string name;
+	int contact;
+	item * next;
+};
+
+class HashTable
+{
+private:
+	static const int TableSize = 10;
+	item * Table[TableSize];
+public:
+	HashTable();
+	int HashFunction(string key);
+	void AddItems(string name, int contact);
+	int NumberOfItemsInIndex(int index);
+	void PrintTable();
+};
+
+void HashTable::PrintTable()
+{
+	int number;
+	for(int i= 0 ; i<TableSize ; i++)
+	{
+		number = NumberOfItemsInIndex(i);
+
+		if(number == 0)
+		{
+			cout<<"Index " <<i<< "is empty"<<endl;
+		}
+		else
+		{
+			cout<<"--------------------------"<<endl;
+			cout<<"Index : "<<i<<endl;
+			cout<<"No of items : "<<number<<endl;
+			cout<<"--------------------------"<<endl;
+			item * ptr = Table[i];
+
+			while(ptr != NULL)
+			{
+				cout<<"Name : "<<ptr->name<<endl;
+				cout<<"Contact : "<<ptr->contact<<endl;
+				cout<<"--------------------------"<<endl;
+				ptr = ptr->next;
+			}
+		}
+	}
+}
+
+int HashTable::NumberOfItemsInIndex(int index)
+{
+	item * ptr = Table[index];
+	int count = 0;
+
+	if(ptr->name != "empty")
+	{
+		count++;
+
+		while(ptr->next != NULL)
+		{
+			count++;
+			ptr = ptr->next;
+		}
+	}
+	return count;
+}
+
+int HashTable::HashFunction(string name)
+{
+	int hashNumber = 0;
+
+	for(unsigned i=0; i< name.length(); i++)
+	{
+		hashNumber += (int) name[i];
+	}
+
+	return hashNumber % TableSize;
+}
+
+HashTable::HashTable()
+{
+	for(int i=0; i<TableSize ; i++)
+	{
+		Table[i] = new item();
+		Table[i]->name = "empty";
+		Table[i]->contact = 0;
+		Table[i]->next = NULL;
+	}
+}
+
+void HashTable::AddItems(string name, int contact)
+{
+	int index = HashFunction(name);
+
+	if(Table[index]->name == "empty")
+	{
+		Table[index]->name = name;
+		Table[index]->contact = contact;
+		Table[index]->next = NULL;
+	}
+	else
+	{
+		item * ptr = Table[index];
+		item * n = new item();
+		n->contact = contact;
+		n->name = name;
+\
+		while(ptr->next != NULL)
+		{
+			ptr = ptr->next;
+		}
+
+		ptr->next = n;
+	}
+}
+
+#endif /* HASH_H_ */

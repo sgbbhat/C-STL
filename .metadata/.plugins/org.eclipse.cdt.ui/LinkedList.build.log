@@ -1,6 +1,6 @@
-13:56:01 **** Incremental Build of configuration Debug for project LinkedList ****
+14:56:47 **** Build of configuration Debug for project LinkedList ****
 make all 
 make: Nothing to be done for 'all'.
 
-13:56:01 Build Finished (took 65ms)
+14:56:47 Build Finished (took 80ms)
 
